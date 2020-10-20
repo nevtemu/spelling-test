@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+@media (max-width: 800px) {/*for iPhone and small devices*/
+    html{
+        font-size: 10px;
+    }
+    .answer{
+        flex-direction: column;
+    }
+}
+main{
+    display:grid;
+    height: 100vh;
+    grid-template-rows: repeat(3, auto) 1fr;
+}
+.description, .results{
+    background-color: #8aaae5;
+    color:#ffffff;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: left;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+.results{
+    border-radius: 0px 0px 25px 25px;
+    margin: 0 1rem 1rem 1rem; 
+}
+.description{
+    margin: 1rem 1rem 0 1rem;
+    border-radius: 25px 25px 0px 0px ;
+}
+.hint{
+    background-color:  rgb(1, 0, 65);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    color:#fbeaeb; 
+}
+#hint{
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    padding-left: 2rem;
+}
+.question{
+    border: #8aaae5 solid 10px;
+    padding: 1rem;
+    margin: 0 1rem 0 1rem;
+}
+.answer{
+    font-size: 7rem; 
+    text-align: left;
+    display: flex;
+    width:100%;
+}
+.answer .fa-volume-up,.fa-check-square{
+    color: rgb(1, 0, 65)
+}
+.answer .controls{
+    margin-right: 1rem;
+    display:flex;
+    flex-direction: row;
+}
+.answer .controls i{
+    margin-left: 1rem;
+}
+#answer{
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    margin-right: 1rem;
+}
+.mistakes{
+    background-color: #f96167;
+    padding-left:1rem;
+    margin: 0 1rem 1rem 1rem;
+    border-radius: 25px;
+    color:#fff748;
+    text-align: left;
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+.mistakes i{
+    font-size: 1rem;
+}
+#textMistakes{
+    padding: 0 1rem 2rem 1rem;
+    word-spacing: 3rem;
+}
+.hidden{
+    display:none;
+}

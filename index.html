@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spelling test for English practicing. Includes 17 085 words and phrases">
+    <meta name="keywords" content="test, spelling, English">
+    <meta name="author" content="Artem Soroka">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./uk-icon.png"/>
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <title>English test</title>
+</head>
+
+<body>
+    <main>
+        <div class="description">
+            Listen to the word and type your answer below. <br> 
+            Use hint in Russian. 
+        </div>
+        <div class="question">
+            <div class="hint">
+                <i class="fas fa-info-circle">  hint</i><br>
+                <span id="hint"></span>
+            </div>
+            <div class="answer">
+                <input type="text" id="answer">
+                <div class="controls">
+                    <i class="fas fa-volume-up" onclick="talk()"></i>
+                    <i class="fas fa-check-square hidden" onclick="checkAnswer()"></i>
+                    <i class="fas fa-thumbs-up" onclick="askQuestion()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="results">
+            <div id="totalyAnswered">Answered questions: 0 </div>
+            <div id="corectAnswers">Correct answers: 0% </div>
+        </div>
+        <div class="mistakes"'>
+            <i class="fas fa-info-circle">  mistakes</i><br>
+            <div id="textMistakes"></div>
+        </div>
+    </main>
+</body>
+</html>

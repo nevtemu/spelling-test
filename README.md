@@ -1,6 +1,6 @@
 # English spelling test
 
-I wrote this simple test for my family to lear corrct spelling of English words.   
+I wrote this simple test for my family to lear correct spelling of English words.   
 It is based around `SpeechSynthesisUtterance()`, which spells words from collection. The answer is typed into input field. There is also hint in russian above, so can be used to practice words knowledge (just translation without using speech syntesis).     
 Collection consists of 17 000 words and phrases.     
 
